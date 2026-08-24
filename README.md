@@ -1,29 +1,29 @@
-# Crawl4AI Scraper – Trasforma il Web in Contenuto Pronto per l'IA
+# Crawl4AI Scraper – Turn the Web into AI-Ready Content
 
-**Estrai Markdown pulito e dati strutturati da qualsiasi sito web in pochi secondi**: questo Actor Apify usa [Crawl4AI](https://github.com/unclecode/crawl4ai) e Playwright per convertire pagine web reali in contenuto pronto all'uso per pipeline RAG, agenti AI, chatbot e modelli LLM — senza scrivere una riga di codice di scraping.
+**Extract clean Markdown and structured data from any website in seconds**: this Apify Actor uses [Crawl4AI](https://github.com/unclecode/crawl4ai) and Playwright to turn real web pages into content ready for RAG pipelines, AI agents, chatbots and LLMs — no scraping code required.
 
-## Perché usare questo Actor
+## Why use this Actor
 
-- 🧠 **Output AI-ready**: Markdown pulito, senza menu/pubblicità/rumore HTML, ideale per indicizzazione RAG e prompt LLM
-- ⚡ **Veloce e scalabile**: basato su Playwright, gestisce anche siti JavaScript-heavy
-- 🔌 **Zero configurazione**: basta una lista di URL, il resto lo fa l'Actor
-- 🔁 **Integrabile**: output in Dataset Apify, pronto per n8n, Make, LangChain, LlamaIndex o qualsiasi pipeline di automazione
+- 🧠 **AI-ready output**: clean Markdown, stripped of menus/ads/HTML noise, ideal for RAG indexing and LLM prompts
+- ⚡ **Fast and scalable**: built on Playwright, handles JavaScript-heavy sites too
+- 🔌 **Zero configuration**: just a list of URLs, the Actor does the rest
+- 🔁 **Easy to integrate**: output lands in an Apify Dataset, ready for n8n, Make, LangChain, LlamaIndex or any automation pipeline
 
-## Casi d'uso
+## Use cases
 
-- Costruire una knowledge base per un agente AI o chatbot aziendale
-- Alimentare pipeline RAG (Retrieval-Augmented Generation) con contenuto web aggiornato
-- Trasformare contenuti di siti concorrenti o partner in formato strutturato per analisi
-- Preparare dataset di training/fine-tuning a partire da pagine web pubbliche
+- Build a knowledge base for an AI agent or company chatbot
+- Feed RAG (Retrieval-Augmented Generation) pipelines with fresh web content
+- Turn competitor or partner website content into structured data for analysis
+- Prepare training/fine-tuning datasets from public web pages
 
 ## Input
 
-| Campo | Tipo | Descrizione |
+| Field | Type | Description |
 |---|---|---|
-| `startUrls` | array | Elenco di URL da crawlare |
-| `maxPages` | integer | Numero massimo di URL processati nel run (default: 1) |
+| `startUrls` | array | List of URLs to crawl |
+| `maxPages` | integer | Maximum number of URLs processed in this run (default: 1) |
 
-Esempio:
+Example:
 ```json
 {
   "startUrls": [{ "url": "https://example.com" }],
@@ -33,15 +33,15 @@ Esempio:
 
 ## Output
 
-Ogni URL crawlato produce un item nel Dataset con:
-- `url`: l'URL crawlato
-- `success`: esito del crawling
-- `markdown`: contenuto della pagina convertito in Markdown pulito, pronto per l'IA
+Each crawled URL produces one Dataset item with:
+- `url`: the crawled URL
+- `success`: crawl outcome
+- `markdown`: the page content converted to clean, AI-ready Markdown
 
-## Tecnologia
+## Technology
 
-Basato su [Crawl4AI](https://github.com/unclecode/crawl4ai), il crawler open-source LLM-friendly con oltre 50k stelle su GitHub, e sull'[Apify SDK per Python](https://docs.apify.com/sdk/python/).
+Built on [Crawl4AI](https://github.com/unclecode/crawl4ai), the open-source LLM-friendly crawler with 50k+ GitHub stars, and the [Apify Python SDK](https://docs.apify.com/sdk/python/).
 
 ---
 
-**Keyword**: web scraping, web crawler, Markdown converter, dati pronti per LLM, RAG, agenti AI, data extraction, Apify Actor, Playwright scraper, contenuto pronto per l'IA.
+**Keywords**: web scraping, web crawler, Markdown converter, LLM-ready data, RAG, AI agents, data extraction, Apify Actor, Playwright scraper, AI-ready content.

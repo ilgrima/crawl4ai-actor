@@ -2,7 +2,7 @@
   "actorSpecification": 1,
   "name": "crawl4ai-scraper",
   "title": "Crawl4AI Scraper - Web to LLM-Ready Markdown & JSON",
-  "description": "Trasforma qualsiasi pagina web in Markdown pulito e dati strutturati pronti per l'IA: estrai contenuti ottimizzati per pipeline RAG, agenti AI e modelli LLM in pochi secondi. Crawler intelligente basato su Crawl4AI e Playwright, veloce, scalabile e senza configurazioni complesse.",
+  "description": "Turn any web page into clean Markdown and structured data ready for AI: extract content optimized for RAG pipelines, AI agents and LLMs in seconds. Smart crawler built on Crawl4AI and Playwright, fast, scalable and zero-configuration.",
   "version": "0.1",
   "buildTag": "latest",
   "dockerfile": "./Dockerfile"

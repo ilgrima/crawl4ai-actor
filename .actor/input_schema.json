@@ -6,14 +6,14 @@
     "startUrls": {
       "title": "Start URLs",
       "type": "array",
-      "description": "Elenco di URL da crawlare",
+      "description": "List of URLs to crawl",
       "editor": "requestListSources",
       "prefill": [{ "url": "https://example.com" }]
     },
     "maxPages": {
-      "title": "Max pagine",
+      "title": "Max pages",
       "type": "integer",
-      "description": "Numero massimo di URL da crawlare in questo run",
+      "description": "Maximum number of URLs to crawl in this run",
       "default": 1
     }
   },

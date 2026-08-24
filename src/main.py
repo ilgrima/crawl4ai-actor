@@ -12,7 +12,7 @@ async def main() -> None:
 
         urls = [item['url'] for item in start_urls][:max_pages]
         if not urls:
-            Actor.log.warning('Nessun URL fornito in input (startUrls)')
+            Actor.log.warning('No URLs provided in input (startUrls)')
             return
 
         async with AsyncWebCrawler() as crawler:
