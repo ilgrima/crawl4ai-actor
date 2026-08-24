@@ -1,0 +1,9 @@
+{
+  "actorSpecification": 1,
+  "name": "crawl4ai-scraper",
+  "title": "Crawl4AI - LLM-ready web crawler",
+  "description": "Crawla una o piu' URL con Crawl4AI e restituisce Markdown/JSON puliti, pronti per pipeline LLM e RAG.",
+  "version": "0.1",
+  "buildTag": "latest",
+  "dockerfile": "./Dockerfile"
+}

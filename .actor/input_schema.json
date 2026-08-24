@@ -1,0 +1,21 @@
+{
+  "title": "Crawl4AI input",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "startUrls": {
+      "title": "Start URLs",
+      "type": "array",
+      "description": "Elenco di URL da crawlare",
+      "editor": "requestListSources",
+      "prefill": [{ "url": "https://example.com" }]
+    },
+    "maxPages": {
+      "title": "Max pagine",
+      "type": "integer",
+      "description": "Numero massimo di URL da crawlare in questo run",
+      "default": 1
+    }
+  },
+  "required": ["startUrls"]
+}

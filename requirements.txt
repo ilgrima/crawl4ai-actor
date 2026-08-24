@@ -1,0 +1,2 @@
+apify~=2.0
+crawl4ai
